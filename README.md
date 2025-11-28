@@ -5,6 +5,13 @@ To analyse the stability of the system having open loop transfer function, G(S)=
 Computer with MATLAB software
 
 ## Theory:
+![WhatsApp Image 2025-11-27 at 23 37 23_d2e7ca80](https://github.com/user-attachments/assets/8234da5b-db19-4bbc-a47d-30a68c0f06d8)
+![WhatsApp Image 2025-11-27 at 23 37 24_710f9fb8](https://github.com/user-attachments/assets/bcdd699e-29c3-46d4-864c-4ca3414d3da3)
+![WhatsApp Image 2025-11-27 at 23 37 23_86fbd7c8](https://github.com/user-attachments/assets/98a9b302-2e9c-4451-800e-4037d731f376)
+![WhatsApp Image 2025-11-27 at 23 37 23_c9301326](https://github.com/user-attachments/assets/6efa1636-95ab-4aba-b36a-0e988456134a)
+
+
+
 
 
 
@@ -17,22 +24,22 @@ Computer with MATLAB software
 	Also determine the stability.
 
 ## Program: 
-num=[10]
-den=[0.1 0.7 1 0]
-sys=tf(num,den)
-[mag,phase,W] =bode(sys)
-mag=squeeze(mag)
-phase=squeeze(phase)
-phase1=deg2rad(phase)
-polarplot(phase1,mag,'linewidth',1.5)
-grid on
-[Gm Pm Wpc Wgc ]=margin(sys)
-if(Wpc>Wgc)
-    disp('stable,)
-elseif(Wpc == Wgc)
-    disp('marginally stable')
-else
-    disp('unsatble')
+num=[10]<br>
+den=[0.1 0.7 1 0]<br>
+sys=tf(num,den)<br>
+[mag,phase,W] =bode(sys)<br>
+mag=squeeze(mag)<br>
+phase=squeeze(phase)<br>
+phase1=deg2rad(phase)<br>
+polarplot(phase1,mag,'linewidth',1.5)<br>
+grid on<br>
+[Gm Pm Wpc Wgc ]=margin(sys)<br>
+if(Wpc>Wgc)<br>
+    disp('stable,)<br>
+elseif(Wpc == Wgc)<br>
+    disp('marginally stable')<br>
+else<br>
+    disp('unsatble')<br>
 end
 ## Output:
 <img width="713" height="640" alt="image" src="https://github.com/user-attachments/assets/a1e2dc05-3608-4ad6-8314-44430e9bd608" />
